@@ -13,24 +13,21 @@ namespace ModuloReportes
 {
     public partial class consultaAnalista : Consulta
     {
-        public static int idUser;
-        public static string nombre;
-        public static string Apellido;
-        public static string UsuarioRed;
-        public static string Contraseña;
         public consultaAnalista()
         {
             InitializeComponent();
         }
 
+        public static int idUser;
+        public static string nombre;
+        public static string Apellido;
+        public static string UsuarioRed;
+        public static string Contraseña;
 
-        /// <summary>
-        /// metodo para buscar segun una palabra el nombre del Analista
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnBuscar_Click_1(object sender, EventArgs e)
+
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrEmpty(txtBuscar.Text.Trim()) == false)
             {
                 try
@@ -47,21 +44,12 @@ namespace ModuloReportes
             }
         }
 
-        /// <summary>
-        /// carga la informacion inicial al formulario
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void consultaAnalista_Load(object sender, EventArgs e)
+        private void BusquedaAnalista_Load(object sender, EventArgs e)
         {
             dataGrid.DataSource = llenarDataGV("analista").Tables[0];
+
         }
 
-
-        private void consultaAnalista_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
@@ -71,13 +59,8 @@ namespace ModuloReportes
             Apellido = Convert.ToString(dataGrid.Rows[filaSeleccionada].Cells[4].Value);
             UsuarioRed = Convert.ToString(dataGrid.Rows[filaSeleccionada].Cells[2].Value);
             Contraseña = Convert.ToString(dataGrid.Rows[filaSeleccionada].Cells[3].Value);
-/// cambiar aqui
-        
-        }
-
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+            ActualizarAnalista actualizar = new ActualizarAnalista();
+            actualizar.Show();
         }
     }
 }
