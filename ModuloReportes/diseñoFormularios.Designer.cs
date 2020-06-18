@@ -58,6 +58,7 @@
             // 
             // panelformularios
             // 
+            this.panelformularios.BackColor = System.Drawing.Color.White;
             this.panelformularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelformularios.Location = new System.Drawing.Point(200, 40);
             this.panelformularios.Name = "panelformularios";
