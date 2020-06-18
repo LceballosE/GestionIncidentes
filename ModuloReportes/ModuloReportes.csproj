@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46BACD9E-2699-4ED2-8372-A9FE50EB033C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ModuloReportes</RootNamespace>
+    <AssemblyName>ModuloReportes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MiLibreria">
+      <HintPath>..\MiLibreria\bin\Debug\MiLibreria.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CambiarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarContraseña.Designer.cs">
+      <DependentUpon>CambiarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigUsuario.Designer.cs">
+      <DependentUpon>ConfigUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmarEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmarEliminar.Designer.cs">
+      <DependentUpon>ConfirmarEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta.Designer.cs">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaAnalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaAnalista.Designer.cs">
+      <DependentUpon>consultaAnalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaRequerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaRequerimiento.Designer.cs">
+      <DependentUpon>consultaRequerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaUsuario.Designer.cs">
+      <DependentUpon>consultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diseñoFormularios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diseñoFormularios.Designer.cs">
+      <DependentUpon>diseñoFormularios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graficas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graficas.Designer.cs">
+      <DependentUpon>Graficas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarRequerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarRequerimiento.Designer.cs">
+      <DependentUpon>ActualizarRequerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoRequerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoRequerimiento.Designer.cs">
+      <DependentUpon>NuevoRequerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarAnalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarAnalista.Designer.cs">
+      <DependentUpon>ActualizarAnalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoUsuario.Designer.cs">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador.Designer.cs">
+      <DependentUpon>administrador.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CambiarContraseña.resx">
+      <DependentUpon>CambiarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigUsuario.resx">
+      <DependentUpon>ConfigUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmarEliminar.resx">
+      <DependentUpon>ConfirmarEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta.resx">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaAnalista.resx">
+      <DependentUpon>consultaAnalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaRequerimiento.resx">
+      <DependentUpon>consultaRequerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaUsuario.resx">
+      <DependentUpon>consultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diseñoFormularios.resx">
+      <DependentUpon>diseñoFormularios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graficas.resx">
+      <DependentUpon>Graficas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarRequerimiento.resx">
+      <DependentUpon>ActualizarRequerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoRequerimiento.resx">
+      <DependentUpon>NuevoRequerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarAnalista.resx">
+      <DependentUpon>ActualizarAnalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoUsuario.resx">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador.resx">
+      <DependentUpon>administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-fondo-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-technolog.jpg" />
+    <None Include="Resources\1309.jpg" />
+    <Content Include="Resources\business-template.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
