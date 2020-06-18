@@ -44,14 +44,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Size = new System.Drawing.Size(1000, 650);
+            // 
             // panelformularios
             // 
             this.panelformularios.Controls.Add(this.pictureBox2);
             this.panelformularios.Controls.Add(this.pictureBox1);
             this.panelformularios.Controls.Add(this.Lbtitulo);
-            this.panelformularios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelformularios.Location = new System.Drawing.Point(200, 40);
-            this.panelformularios.Size = new System.Drawing.Size(650, 610);
+            this.panelformularios.ForeColor = System.Drawing.Color.Black;
+            this.panelformularios.Size = new System.Drawing.Size(800, 610);
             // 
             // panelMenu
             // 
@@ -66,8 +69,8 @@
             this.Lbtitulo.AutoSize = true;
             this.Lbtitulo.BackColor = System.Drawing.Color.Transparent;
             this.Lbtitulo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbtitulo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbtitulo.Location = new System.Drawing.Point(195, 84);
+            this.Lbtitulo.ForeColor = System.Drawing.Color.DarkCyan;
+            this.Lbtitulo.Location = new System.Drawing.Point(319, 78);
             this.Lbtitulo.Name = "Lbtitulo";
             this.Lbtitulo.Size = new System.Drawing.Size(248, 27);
             this.Lbtitulo.TabIndex = 6;
@@ -160,7 +163,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(144, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(268, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(45, 32);
             this.pictureBox1.TabIndex = 7;
@@ -169,7 +172,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(69, 152);
+            this.pictureBox2.Location = new System.Drawing.Point(164, 158);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(503, 304);
             this.pictureBox2.TabIndex = 8;
@@ -180,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(850, 650);
+            this.ClientSize = new System.Drawing.Size(1000, 650);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "administrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -65,7 +65,7 @@ namespace ModuloReportes
             prioridad = Convert.ToString(dataGrid.Rows[filaSeleccionada].Cells[6].Value);
 //cambiar aqui
             ActualizarRequerimiento requerimiento = new ActualizarRequerimiento();
-            requerimiento.Show();
+            requerimiento.BringToFront();
             this.Hide();
         }
 

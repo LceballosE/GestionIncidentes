@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="consultaAnalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaAnalista.Designer.cs">
+      <DependentUpon>consultaAnalista.cs</DependentUpon>
+    </Compile>
     <Compile Include="CambiarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,12 +80,6 @@
     </Compile>
     <Compile Include="Consulta.Designer.cs">
       <DependentUpon>Consulta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="consultaAnalista.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="consultaAnalista.Designer.cs">
-      <DependentUpon>consultaAnalista.cs</DependentUpon>
     </Compile>
     <Compile Include="consultaRequerimiento.cs">
       <SubType>Form</SubType>
@@ -149,6 +149,9 @@
     <Compile Include="administrador.Designer.cs">
       <DependentUpon>administrador.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="consultaAnalista.resx">
+      <DependentUpon>consultaAnalista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CambiarContraseña.resx">
       <DependentUpon>CambiarContraseña.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,9 +163,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="consultaAnalista.resx">
-      <DependentUpon>consultaAnalista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="consultaRequerimiento.resx">
       <DependentUpon>consultaRequerimiento.cs</DependentUpon>

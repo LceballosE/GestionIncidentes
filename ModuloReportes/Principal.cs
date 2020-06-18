@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -207,12 +208,10 @@ namespace ModuloReportes
             btnRestaurar.Visible = true;
         }
 
-        
         public void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
             formulario = panelformularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
-                                                                                     //si el formulario/instancia no existe
 
             if (formulario == null)
             {
@@ -230,7 +229,7 @@ namespace ModuloReportes
             //si el formulario/instancia existe
             else
             {
-                if (NuevoUsuario.guardado == true || NuevoRequerimiento.guardado == true || ActualizarAnalista.guardado== true)
+                if (NuevoUsuario.guardado == true || NuevoRequerimiento.guardado == true)
                 {
                     formulario = new MiForm();
                     formulario.TopLevel = false;
@@ -243,8 +242,8 @@ namespace ModuloReportes
                     panelsubmenu.BringToFront();
                     panelsubmenu2.BringToFront();
                     NuevoRequerimiento.guardado = false;
-                    NuevoUsuario.guardado = false;
-                    ActualizarAnalista.guardado = false;
+                    NuevoUsuario.guardado = false;                 
+                    
                 }
                 formulario.BringToFront();
                 panelsubmenu.BringToFront();
@@ -253,11 +252,6 @@ namespace ModuloReportes
 
         }
 
-        public static void abrirform()
-        {
-         //  AbrirFormulario<ActualizarAnalista>();
-        }
-
-
+       
     }
 }

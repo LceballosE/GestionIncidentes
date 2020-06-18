@@ -39,10 +39,11 @@
             this.parrDescripcion = new System.Windows.Forms.RichTextBox();
             this.dateFechaIngreso = new System.Windows.Forms.DateTimePicker();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.listUsuario = new MiLibreria.ErrorComboBox();
-            this.listTipoCaso = new MiLibreria.ErrorComboBox();
-            this.listEstado = new MiLibreria.ErrorComboBox();
-            this.listPrioridad = new MiLibreria.ErrorComboBox();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.usuario = new System.Windows.Forms.TextBox();
+            this.tipocaso = new System.Windows.Forms.TextBox();
+            this.estado = new System.Windows.Forms.TextBox();
+            this.prioridad = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,56 +138,68 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // listUsuario
+            // btnBorrar
             // 
-            this.listUsuario.FormattingEnabled = true;
-            this.listUsuario.Location = new System.Drawing.Point(527, 137);
-            this.listUsuario.Name = "listUsuario";
-            this.listUsuario.Size = new System.Drawing.Size(234, 21);
-            this.listUsuario.TabIndex = 56;
-            this.listUsuario.Text = "Seleccione ...";
-            this.listUsuario.validar = true;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
+            this.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBorrar.FlatAppearance.BorderSize = 0;
+            this.btnBorrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.Color.White;
+            this.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBorrar.Location = new System.Drawing.Point(596, 500);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(110, 42);
+            this.btnBorrar.TabIndex = 63;
+            this.btnBorrar.Text = "Cerrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
-            // listTipoCaso
+            // usuario
             // 
-            this.listTipoCaso.FormattingEnabled = true;
-            this.listTipoCaso.Location = new System.Drawing.Point(94, 227);
-            this.listTipoCaso.Name = "listTipoCaso";
-            this.listTipoCaso.Size = new System.Drawing.Size(171, 21);
-            this.listTipoCaso.TabIndex = 57;
-            this.listTipoCaso.Text = "Seleccione ...";
-            this.listTipoCaso.validar = true;
+            this.usuario.Enabled = false;
+            this.usuario.Location = new System.Drawing.Point(537, 136);
+            this.usuario.Name = "usuario";
+            this.usuario.Size = new System.Drawing.Size(150, 20);
+            this.usuario.TabIndex = 64;
             // 
-            // listEstado
+            // tipocaso
             // 
-            this.listEstado.FormattingEnabled = true;
-            this.listEstado.Location = new System.Drawing.Point(345, 227);
-            this.listEstado.Name = "listEstado";
-            this.listEstado.Size = new System.Drawing.Size(187, 21);
-            this.listEstado.TabIndex = 58;
-            this.listEstado.Text = "Seleccione ...";
-            this.listEstado.validar = true;
+            this.tipocaso.Enabled = false;
+            this.tipocaso.Location = new System.Drawing.Point(94, 228);
+            this.tipocaso.Name = "tipocaso";
+            this.tipocaso.Size = new System.Drawing.Size(150, 20);
+            this.tipocaso.TabIndex = 65;
             // 
-            // listPrioridad
+            // estado
             // 
-            this.listPrioridad.FormattingEnabled = true;
-            this.listPrioridad.Location = new System.Drawing.Point(629, 230);
-            this.listPrioridad.Name = "listPrioridad";
-            this.listPrioridad.Size = new System.Drawing.Size(159, 21);
-            this.listPrioridad.TabIndex = 59;
-            this.listPrioridad.Text = "Seleccione ...";
-            this.listPrioridad.validar = true;
+            this.estado.Enabled = false;
+            this.estado.Location = new System.Drawing.Point(345, 233);
+            this.estado.Name = "estado";
+            this.estado.Size = new System.Drawing.Size(150, 20);
+            this.estado.TabIndex = 66;
+            // 
+            // prioridad
+            // 
+            this.prioridad.Enabled = false;
+            this.prioridad.Location = new System.Drawing.Point(629, 228);
+            this.prioridad.Name = "prioridad";
+            this.prioridad.Size = new System.Drawing.Size(150, 20);
+            this.prioridad.TabIndex = 67;
             // 
             // ActualizarRequerimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listPrioridad);
-            this.Controls.Add(this.listEstado);
-            this.Controls.Add(this.listTipoCaso);
-            this.Controls.Add(this.listUsuario);
+            this.ClientSize = new System.Drawing.Size(800, 610);
+            this.Controls.Add(this.prioridad);
+            this.Controls.Add(this.estado);
+            this.Controls.Add(this.tipocaso);
+            this.Controls.Add(this.usuario);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.dateFechaIngreso);
             this.Controls.Add(this.parrDescripcion);
             this.Controls.Add(this.label3);
@@ -198,7 +211,7 @@
             this.Controls.Add(this.LbTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActualizarRequerimiento";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NuevoRequerimiento";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ActualizarRequerimiento_FormClosed);
             this.Load += new System.EventHandler(this.ActualizarRequerimiento_Load);
@@ -218,10 +231,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox parrDescripcion;
         private System.Windows.Forms.DateTimePicker dateFechaIngreso;
-        private MiLibreria.ErrorComboBox listUsuario;
-        private MiLibreria.ErrorComboBox listPrioridad;
-        private MiLibreria.ErrorComboBox listEstado;
-        private MiLibreria.ErrorComboBox listTipoCaso;
         public System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.TextBox prioridad;
+        private System.Windows.Forms.TextBox estado;
+        private System.Windows.Forms.TextBox tipocaso;
+        private System.Windows.Forms.TextBox usuario;
     }
 }
