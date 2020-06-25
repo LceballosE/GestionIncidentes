@@ -10,6 +10,11 @@ Permite realizar :
 - Creacion , modificacion ,  eliminación y consulta de Usuarios
 - Visualización de  DashBoard  (Gráficas)  de infromación en la BD
 
+Adicionalmente, 
+- Login con autenticación BD - User/Pass
+- Actualizacion de contraseña
+- Modulo de administración (Usuario Admin)
+- Modulo de Gestion 
 
 Para el Front-End se usa el tutorial de  @RJCodeAdvande
  https://rjcodeadvance.com/
