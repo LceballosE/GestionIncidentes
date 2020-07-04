@@ -130,6 +130,7 @@ namespace ModuloReportes
 
                     MessageBox.Show("Se ha guardado la informacion correctamente, El usuario ha sido creado");
                     guardado = true;
+                    this.Hide();
 
                 }
                 catch (Exception error)
