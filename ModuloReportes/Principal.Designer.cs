@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panelContenedor = new System.Windows.Forms.Panel();
-            panelformularios = new System.Windows.Forms.Panel();
-            panelsubmenu = new System.Windows.Forms.Panel();
+            this.panelformularios = new System.Windows.Forms.Panel();
+            this.panelsubmenu = new System.Windows.Forms.Panel();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnRequerimiento = new System.Windows.Forms.Button();
-            panelsubmenu2 = new System.Windows.Forms.Panel();
+            this.panelsubmenu2 = new System.Windows.Forms.Panel();
             this.btnbuscatanalista = new System.Windows.Forms.Button();
             this.btnbuscarusuario = new System.Windows.Forms.Button();
             this.btnbuscarreq = new System.Windows.Forms.Button();
@@ -50,21 +50,24 @@
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LbTitulo = new System.Windows.Forms.Label();
             this.panelContenedor.SuspendLayout();
-            panelformularios.SuspendLayout();
-            panelsubmenu.SuspendLayout();
-            panelsubmenu2.SuspendLayout();
+            this.panelformularios.SuspendLayout();
+            this.panelsubmenu.SuspendLayout();
+            this.panelsubmenu2.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Controls.Add(panelformularios);
+            this.panelContenedor.Controls.Add(this.panelformularios);
             this.panelContenedor.Controls.Add(this.panelMenu);
             this.panelContenedor.Controls.Add(this.panelBarraTitulo);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -75,23 +78,26 @@
             // 
             // panelformularios
             // 
-            panelformularios.Controls.Add(panelsubmenu);
-            panelformularios.Controls.Add(panelsubmenu2);
-            panelformularios.Location = new System.Drawing.Point(200, 40);
-            panelformularios.Name = "panelformularios";
-            panelformularios.Size = new System.Drawing.Size(800, 610);
-            panelformularios.TabIndex = 2;
+            this.panelformularios.BackColor = System.Drawing.Color.White;
+            this.panelformularios.Controls.Add(this.panelsubmenu);
+            this.panelformularios.Controls.Add(this.panelsubmenu2);
+            this.panelformularios.Controls.Add(this.pictureBox1);
+            this.panelformularios.Controls.Add(this.LbTitulo);
+            this.panelformularios.Location = new System.Drawing.Point(200, 40);
+            this.panelformularios.Name = "panelformularios";
+            this.panelformularios.Size = new System.Drawing.Size(800, 610);
+            this.panelformularios.TabIndex = 2;
             // 
             // panelsubmenu
             // 
-            panelsubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            panelsubmenu.Controls.Add(this.btnUsuario);
-            panelsubmenu.Controls.Add(this.btnRequerimiento);
-            panelsubmenu.Location = new System.Drawing.Point(3, 103);
-            panelsubmenu.Name = "panelsubmenu";
-            panelsubmenu.Size = new System.Drawing.Size(200, 101);
-            panelsubmenu.TabIndex = 0;
-            panelsubmenu.Visible = false;
+            this.panelsubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.panelsubmenu.Controls.Add(this.btnUsuario);
+            this.panelsubmenu.Controls.Add(this.btnRequerimiento);
+            this.panelsubmenu.Location = new System.Drawing.Point(3, 103);
+            this.panelsubmenu.Name = "panelsubmenu";
+            this.panelsubmenu.Size = new System.Drawing.Size(200, 101);
+            this.panelsubmenu.TabIndex = 0;
+            this.panelsubmenu.Visible = false;
             // 
             // btnUsuario
             // 
@@ -134,15 +140,15 @@
             // 
             // panelsubmenu2
             // 
-            panelsubmenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            panelsubmenu2.Controls.Add(this.btnbuscatanalista);
-            panelsubmenu2.Controls.Add(this.btnbuscarusuario);
-            panelsubmenu2.Controls.Add(this.btnbuscarreq);
-            panelsubmenu2.Location = new System.Drawing.Point(3, 171);
-            panelsubmenu2.Name = "panelsubmenu2";
-            panelsubmenu2.Size = new System.Drawing.Size(200, 147);
-            panelsubmenu2.TabIndex = 3;
-            panelsubmenu2.Visible = false;
+            this.panelsubmenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.panelsubmenu2.Controls.Add(this.btnbuscatanalista);
+            this.panelsubmenu2.Controls.Add(this.btnbuscarusuario);
+            this.panelsubmenu2.Controls.Add(this.btnbuscarreq);
+            this.panelsubmenu2.Location = new System.Drawing.Point(3, 171);
+            this.panelsubmenu2.Name = "panelsubmenu2";
+            this.panelsubmenu2.Size = new System.Drawing.Size(200, 147);
+            this.panelsubmenu2.TabIndex = 3;
+            this.panelsubmenu2.Visible = false;
             // 
             // btnbuscatanalista
             // 
@@ -379,6 +385,28 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(173, 174);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(463, 384);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LbTitulo
+            // 
+            this.LbTitulo.AutoSize = true;
+            this.LbTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.LbTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbTitulo.ForeColor = System.Drawing.Color.DarkCyan;
+            this.LbTitulo.Location = new System.Drawing.Point(95, 57);
+            this.LbTitulo.Name = "LbTitulo";
+            this.LbTitulo.Size = new System.Drawing.Size(640, 43);
+            this.LbTitulo.TabIndex = 19;
+            this.LbTitulo.Text = "Modulo Gestión de Inconsistencias";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,9 +420,10 @@
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panelContenedor.ResumeLayout(false);
-            panelformularios.ResumeLayout(false);
-            panelsubmenu.ResumeLayout(false);
-            panelsubmenu2.ResumeLayout(false);
+            this.panelformularios.ResumeLayout(false);
+            this.panelformularios.PerformLayout();
+            this.panelsubmenu.ResumeLayout(false);
+            this.panelsubmenu2.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panelBarraTitulo.ResumeLayout(false);
@@ -402,6 +431,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,5 +459,7 @@
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.Button btngraficas;
         private System.Windows.Forms.Button btncerrarsesion;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LbTitulo;
     }
 }
