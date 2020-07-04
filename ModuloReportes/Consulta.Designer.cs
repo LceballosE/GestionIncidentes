@@ -57,7 +57,7 @@
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.ReadOnly = true;
             this.dataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGrid.Size = new System.Drawing.Size(749, 264);
+            this.dataGrid.Size = new System.Drawing.Size(749, 268);
             this.dataGrid.TabIndex = 0;
             // 
             // label1
