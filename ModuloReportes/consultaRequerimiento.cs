@@ -63,7 +63,6 @@ namespace ModuloReportes
             tipocaso = Convert.ToString(dataGrid.Rows[filaSeleccionada].Cells[4].Value);
             estado = Convert.ToString(dataGrid.Rows[filaSeleccionada].Cells[5].Value);
             prioridad = Convert.ToString(dataGrid.Rows[filaSeleccionada].Cells[6].Value);
-//cambiar aqui
             ActualizarRequerimiento requerimiento = new ActualizarRequerimiento();
             requerimiento.Show();
             

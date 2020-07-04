@@ -41,8 +41,6 @@ namespace ModuloReportes
             }
 
         }
-
-
         private void btnNo_Click(object sender, EventArgs e)
         {
             this.Hide();

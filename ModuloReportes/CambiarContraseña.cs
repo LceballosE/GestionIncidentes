@@ -19,7 +19,7 @@ namespace ModuloReportes
         {
             InitializeComponent();
         }
-               
+
         private void CambiarContraseña_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -27,20 +27,7 @@ namespace ModuloReportes
 
         private void BtnCancelarPass_Click(object sender, EventArgs e)
         {
-            /*  if (Autenticacion.usuarioRed == "admin")
-              {
-                  administrador ventanaAdmin = new administrador();
-                  ventanaAdmin.Show();
-                  this.Hide();
-              }
-              else
-              {
-                  ConfigUsuario configUsuario = new ConfigUsuario();
-                  configUsuario.Show();
-                  this.Hide();
-              }*/
             this.Hide();
-
         }
 
         private void BtnAceptarPass_Click(object sender, EventArgs e)

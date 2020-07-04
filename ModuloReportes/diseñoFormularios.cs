@@ -18,7 +18,6 @@ namespace ModuloReportes
             InitializeComponent();
         }
 
-        //RESIZE METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO EN TIEMPO DE EJECUCION ----------------------------------------------------------
         private int tolerance = 12;
         private const int WM_NCHITTEST = 132;
         private const int HTBOTTOMRIGHT = 17;

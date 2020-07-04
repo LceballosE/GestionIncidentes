@@ -140,9 +140,10 @@ namespace ModuloReportes
                 LbAnalistas.Text = totalanalista;
 
             }
-            catch
+            catch (Exception e)
             {
-
+                conexion.Close();
+                MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Intente nuevamente" + e);
             }
         }
 

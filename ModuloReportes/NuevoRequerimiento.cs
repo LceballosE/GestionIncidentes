@@ -129,6 +129,7 @@ namespace ModuloReportes
                     Utilidades.EjecutarSP(comando);
 
                     MessageBox.Show("Se ha guardado la informacion correctamente, El usuario ha sido creado");
+                    this.Hide();
                     guardado = true;
 
                 }

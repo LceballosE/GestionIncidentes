@@ -30,7 +30,7 @@ namespace ModuloReportes
             {
                 try
                 {
-                    string consulta = string.Format("select u.id,u.nombre,u.apellido,u.usuariored,e.nombre Empresa from usuario u join empresa e on e.id=u.idempresa where u.nombre like ('%" + txtBuscar.Text.Trim() + "%') ");
+                    string consulta = string.Format("select u.id,u.nombre,u.apellido,u.usuariored,e.nombre Empresa  from usuario u join empresa e on e.id=u.idempresa where u.nombre like ('%" + txtBuscar.Text.Trim() + "%') ");
                     DataSet dataset = Utilidades.EjecutarBd(consulta);
                     dataGrid.DataSource = dataset.Tables[0];
                 }
