@@ -77,10 +77,10 @@ namespace ModuloReportes
                 conexion.Close();
 
             }
-            catch (Exception e)
+            catch 
             {
                 conexion.Close();
-                MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Intente nuevamente" + e);
+                MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Intente nuevamente" );
             }
         }
 
@@ -108,7 +108,7 @@ namespace ModuloReportes
                 conexion.Close();
 
             }
-            catch (Exception e)
+            catch 
             {
                 conexion.Close();
                 MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Intente nuevamente");
@@ -140,7 +140,7 @@ namespace ModuloReportes
                 LbAnalistas.Text = totalanalista;
 
             }
-            catch (Exception e)
+            catch 
             {               
                 MessageBox.Show("Ha ocurrido un Error. Intente nuevamente");
             }
