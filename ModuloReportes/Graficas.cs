@@ -142,7 +142,7 @@ namespace ModuloReportes
             }
             catch
             {
-
+                MessageBox.Show("Ha ocurrido un Error." );
             }
         }
 
