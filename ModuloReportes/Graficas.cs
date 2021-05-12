@@ -49,7 +49,7 @@ namespace ModuloReportes
             catch (Exception e)
             {
                 conexion.Close();
-                MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Intente nuevamente" + e);
+                MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Por favor Intente nuevamente" + e);
             }
         }
 
@@ -80,7 +80,7 @@ namespace ModuloReportes
             catch 
             {
                 conexion.Close();
-                MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Intente nuevamente" );
+                MessageBox.Show("Ha ocurrido un Error al cambiar la contraseña. Por favor Intente nuevamente" );
             }
         }
 
